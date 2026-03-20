@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Achat de Comptes - Black Store</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    /* Vidéo en arrière-plan */
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Overlay sombre pour lisibilité */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+    }
+
+    /* Boutons style gaming néon */
+    .btn-link {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 25px;
+      background: transparent;
+      color: #00ffea; /* couleur néon turquoise */
+      border: 2px solid #00ffea;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: 0 0 8px #00ffea;
+      box-shadow: 0 0 12px #00ffea;
+      transition: all 0.3s ease;
+    }
+
+    .btn-link:hover {
+      color: #fff;
+      background: #00ffea;
+      text-shadow: 0 0 15px #fff;
+      box-shadow: 0 0 20px #00ffea, 0 0 40px #00ffea;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Vidéo en arrière-plan -->
+  <video autoplay muted loop class="video-bg">
+    <source src="videos/gaming.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+  <div class="overlay"></div>
+
+  <header>
+    <h1>🎮 Achat de Comptes</h1>
+    <p>Choisissez votre catégorie</p>
+  </header>
+
+  <div class="container">
+    <a href="roblox1.html" class="btn-link">Comptes Roblox</a>
+    <a href="freefire1.html" class="btn-link">Comptes Free Fire</a>
+  </div>
+</body>
+</html>

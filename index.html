@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Black Store</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+    }
+
+    /* Vidéo en arrière-plan */
+    .video-bg {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      filter: brightness(0.4);
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 3em;
+      color: #00ffea;
+      text-shadow: 0 0 15px #00ffea;
+    }
+    header p {
+      font-size: 1.3em;
+      color: #ddd;
+    }
+
+    .explain {
+      background: rgba(0,0,0,0.6);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .service {
+      margin: 15px;
+      text-align: center;
+    }
+    .service img {
+      width: 150px;
+      height: 150px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 25px #00ffea;
+    }
+    .service p {
+      color: #00ffea;
+      text-shadow: 0 0 8px #00ffea;
+      font-weight: bold;
+    }
+
+    .footer-contact {
+      background-color: rgba(0,0,0,0.6);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .footer-contact h2 {
+      margin-bottom: 20px;
+      font-size: 1.6em;
+      color: #00ffea;
+      text-shadow: 0 0 10px #00ffea;
+    }
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    /* Boutons néon turquoise */
+    .btn-contact, .btn-whatsapp, .achat-link {
+      display: inline-block;
+      min-width: 200px;
+      padding: 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      background: transparent;
+      color: #00ffea;
+      border: 2px solid #00ffea;
+      text-shadow: 0 0 8px #00ffea;
+      box-shadow: 0 0 12px #00ffea;
+      transition: all 0.3s ease;
+    }
+    .btn-contact:hover, .btn-whatsapp:hover, .achat-link:hover {
+      color: #fff;
+      background: #00ffea;
+      text-shadow: 0 0 15px #fff;
+      box-shadow: 0 0 20px #00ffea, 0 0 40px #00ffea;
+      transform: scale(1.1);
+    }
+
+    /* Bouton Achat Compte en haut à gauche */
+    .achat-compte {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Vidéo en arrière-plan -->
+  <video autoplay muted loop class="video-bg">
+    <source src="videos/gaming-background.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+
+  <header>
+    <h1>Black Store</h1>
+    <p>Recharge facile avec Airtel Money</p>
+  </header>
+
+  <section class="explain">
+    <p><strong>Comment fonctionne le site :</strong><br>
+    1️⃣ Choisissez le service qui vous intéresse.<br>
+    2️⃣ Cliquez sur l’image pour ouvrir la page dédiée.<br>
+    3️⃣ Consultez les prix.<br>
+    4️⃣ Contactez-nous sur WhatsApp pour finaliser votre recharge.<br>
+    ✅ Paiement simple et sécurisé via Airtel Money.</p>
+  </section>
+
+  <section class="services">
+    <div class="service">
+      <a href="roblox.html"><img src="roblox.png" alt="Roblox"></a>
+      <p>Roblox</p>
+    </div>
+    <div class="service">
+      <a href="freefire.html"><img src="freefire.png" alt="Free Fire"></a>
+      <p>Free Fire</p>
+    </div>
+    <div class="service">
+      <a href="pubg.html"><img src="pubg.png" alt="PUBG"></a>
+      <p>PUBG</p>
+    </div>
+    <div class="service">
+      <a href="snap.html"><img src="snap.png" alt="Snapchat"></a>
+      <p>Snapchat+</p>
+    </div>
+    <div class="service">
+      <a href="applemusic.html"><img src="applemusic.png" alt="Apple Music"></a>
+      <p>Apple Music</p>
+    </div>
+    <div class="service">
+      <a href="playstation.html"><img src="playstation.png" alt="PlayStation"></a>
+      <p>PlayStation</p>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <footer class="footer-contact">
+    <h2>📞 Contactez-nous</h2>
+    <div class="contact-buttons">
+      <a href="tel:+24162081813" class="btn-contact">+241 62 08 18 13</a>
+      <a href="tel:+24166169586" class="btn-contact">+241 66 16 95 86</a>
+      <a href="https://chat.whatsapp.com/FSzqPFbvOLKKN2yPT2H3Zk" target="_blank" class="btn-whatsapp">
+        💬 Rejoindre le groupe WhatsApp
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bouton Achat Compte en haut à gauche -->
+  <div class="achat-compte">
+    <a href="comptes.html" class="achat-link">🛒 Achat Compte</a>
+  </div>
+</body>
+</html>
